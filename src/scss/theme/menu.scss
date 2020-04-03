@@ -1,0 +1,9 @@
+/* menu closed */
+[type="checkbox"] + [role="menu"] {
+    display: none;
+}
+
+/* menu open */
+[type="checkbox"]:checked + [role="menu"] {
+    display: block;
+}

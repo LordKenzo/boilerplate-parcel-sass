@@ -1,0 +1,51 @@
+// Box model
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0 ;
+}
+
+* + * {
+  margin-top: 1 rem;
+}
+
+// Body
+body {
+  margin: 0;
+  font-family: $font-family;
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: $darker;
+  line-height: 1.1;
+}
+
+strong {
+  color: $darker;
+}
+
+li {
+  margin-top:  0.25rem;
+}
+
+// App container
+.app-container {
+  background: $lighter;
+  display: grid;
+}
+
+// App
+.app-frame {
+  background: $lightest;
+  box-shadow: $box-shadow;
+  height: $app-height;
+  margin: auto;
+  overflow: auto;
+  width: $app-width;
+  max-width: $app-max-width;
+  max-height: $app-max-height;
+  margin-top: 0.5rem;
+}
